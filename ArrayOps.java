@@ -15,13 +15,18 @@ public class ArrayOps {
     }
     return largestInt;
   }
-  //
-  // public static int[] sumrows(int[][] matrix) {
-  //
-  // }
-  //
+
+  public static int[] sumRows(int[][] matrix) {
+    int[]totalRow = new int [matrix.length];
+    int sumDigits = 0;
+    for (int i = 0; i < matrix.length; i++) {
+      sumDigits = sum(matrix[i]);
+      totalRow[i] = sumDigits;
+    }
+    return totalRow;
+  }
+
   // public static int[] largestInRows(int[][] matrix) {
-  //
   // }
   //
   // public static int sum(int[][] arr) {
