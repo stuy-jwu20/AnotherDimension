@@ -30,16 +30,12 @@ public class ArrayOps {
     int[]biggestInRow = new int [matrix.length];
     int largestDigits = 0;
     for (int i = 0; i < matrix.length; i++) {
-      for (int j = i; j < matrix[i].length; j++) {
-        if (matrix[i][j] > largestDigits) {
-          largestDigits = matrix[i][j];
-        }
-      }
+      largestDigits = largest(matrix[i]);
       biggestInRow[i] = largestDigits;
     }
     return biggestInRow;
   }
-  //
+
   // public static int sum(int[][] arr) {
   //
   // }
