@@ -26,8 +26,19 @@ public class ArrayOps {
     return totalRow;
   }
 
-  // public static int[] largestInRows(int[][] matrix) {
-  // }
+  public static int[] largestInRows(int[][] matrix) {
+    int[]biggestInRow = new int [matrix.length];
+    int largestDigits = 0;
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = i; j < matrix[i].length; j++) {
+        if (matrix[i][j] > largestDigits) {
+          largestDigits = matrix[i][j];
+        }
+      }
+      biggestInRow[i] = largestDigits;
+    }
+    return biggestInRow;
+  }
   //
   // public static int sum(int[][] arr) {
   //
