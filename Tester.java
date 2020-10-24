@@ -11,9 +11,12 @@ public class Tester {
     // int[][]arrayCol = {{ 1, 1, 1 },
     //                    { 2, 2, 2 },
     //                    { 3, 3, 3 } };
-    // int[]arrayY =   { 1, 3, 5 };
+    // int[]arrayY = { 1, 3, 5 };
+    int[][]arrayBoth = {{ 2, 4, 2 },
+                        { 2, 2, 2 }};
     //System.out.println(Arrays.toString(ArrayOps.sumRows(arrayX)));
     //System.out.println(ArrayOps.sum(arrayX));
     //System.out.println(ArrayOps.isColMagic(arrayCol));
+    System.out.println(ArrayOps.isLocationMagic(arrayBoth, 0, 1));
   }
 }
